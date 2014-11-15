@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logopambulet"
+        android:contentDescription="@string/desc" />
+    
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/niy"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/niy"
+        fontawesometext:be_roundedCorners="true"
+        android:inputType="number"/>
+    
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/pass"
+        android:layout_below="@+id/niy"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="@string/pass"
+        bootstrapbutton:be_roundedCorners="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"/>
+    
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/login"
+        android:layout_below="@+id/pass"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+   	 	android:layout_marginTop="15dp"
+    	android:text="@string/login"
+    	bootstrapbutton:bb_icon_right="fa-sign-in"
+    	android:layout_centerHorizontal="true"
+    	bootstrapbutton:bb_type="info"/>
+
+</RelativeLayout>
